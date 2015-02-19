@@ -101,11 +101,15 @@ nmap [o <Plug>unimpairedOPrevious
 
 nmap [n <Plug>unimpairedContextPrevious
 nmap ]n <Plug>unimpairedContextNext
+vmap [n <Plug>unimpairedContextPrevious
+vmap ]n <Plug>unimpairedContextNext
 omap [n <Plug>unimpairedContextPrevious
 omap ]n <Plug>unimpairedContextNext
 
 nnoremap <silent> <Plug>unimpairedContextPrevious :call <SID>Context(1)<CR>
 nnoremap <silent> <Plug>unimpairedContextNext     :call <SID>Context(0)<CR>
+vnoremap <silent> <Plug>unimpairedContextPrevious :call <SID>Context(1)<CR>
+vnoremap <silent> <Plug>unimpairedContextNext     :call <SID>Context(0)<CR>
 onoremap <silent> <Plug>unimpairedContextPrevious :call <SID>ContextMotion(1)<CR>
 onoremap <silent> <Plug>unimpairedContextNext     :call <SID>ContextMotion(0)<CR>
 
